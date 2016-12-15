@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VW8-LS-TzE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alarm-->
+        <scene sceneID="KBM-X1-Vzc">
+            <objects>
+                <viewController id="9uo-8u-7L5" customClass="AlarmViewController" customModule="retravl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l7f-aU-4U6"/>
+                        <viewControllerLayoutGuide type="bottom" id="uJN-J2-ODH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Mz-0b-KKX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새로운 알림이 없습니다" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsu-qw-HWL">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.56775861978530884" green="0.59136682748794556" blue="0.64122468233108521" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95675891637802124" green="0.95692259073257446" blue="0.95674854516983032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lsu-qw-HWL" firstAttribute="width" secondItem="5Mz-0b-KKX" secondAttribute="width" id="UPN-wE-4MW"/>
+                            <constraint firstItem="lsu-qw-HWL" firstAttribute="centerY" secondItem="5Mz-0b-KKX" secondAttribute="centerY" id="ckn-j1-noy"/>
+                            <constraint firstItem="lsu-qw-HWL" firstAttribute="centerX" secondItem="5Mz-0b-KKX" secondAttribute="centerX" id="iU2-lw-0mh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alarm" id="2Lr-Hz-Ztb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vWl-aX-nGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840" y="812"/>
+        </scene>
+        <!--Alarm-->
+        <scene sceneID="5QW-Yl-7Js">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VW8-LS-TzE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Alarm" image="tabBarAlarmOff" selectedImage="tabBarAlarmOn" id="cKF-yr-T0K"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eFN-v6-KJL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9uo-8u-7L5" kind="relationship" relationship="rootViewController" id="uMM-Mr-mVt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaP-Fa-HFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="812"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabBarAlarmOff" width="19" height="20"/>
+        <image name="tabBarAlarmOn" width="19" height="20"/>
+    </resources>
+</document>

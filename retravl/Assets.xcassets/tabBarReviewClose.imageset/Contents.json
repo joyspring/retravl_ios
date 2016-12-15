@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "tabBarReviewClose.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "tabBarReviewClose@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "tabBarReviewClose@3x.png"
+    }
+  ],
+  "properties" : {
+    "template-rendering-intent" : "original"
+  },
+  "info" : {
+    "author" : "zeplin",
+    "version" : "1"
+  }
+}
